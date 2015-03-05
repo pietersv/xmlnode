@@ -60,9 +60,9 @@ But no, it's surprisingly a hassle to write XML cross platforms.
 So now you're working with libraries and arcane bugs to write a simple strings, but in a way that allows you to keep track
 of references and add attributes and content dynamically as your model changes.  And writing code conditionally by platform.
 
-A common alternative is writing strings by hand, as in `var xml = '<fonts count="+fonts.counts+'"><font name="'+font[i].name + '" sz="+font[i].sz+'"></font>";...`   But then you encounter embedded quotes which need escaping, and different kinds of quotes.  That's no fun either.  
+A common alternative is writing strings by hand, as in `var xml = '<fonts count="+fonts.counts+'"><font name="'+font[i].name + '" sz="+font[i].sz+'"></font>";...`  
 
-Here use use a simple function from O'Reilly (http://archive.oreilly.com/pub/h/2127) inside a jQuery/cheerio-like wrapper.
+And then you encounter embedded quotes which need escaping, and different kinds of quotes.  That's no fun either.   Here we borrow function from O'Reilly (http://archive.oreilly.com/pub/h/2127) for that.
 
 
 XmlNode is a few bytes of simplicity.  
